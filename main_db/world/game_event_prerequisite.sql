@@ -11,13 +11,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_prerequisite`;
 CREATE TABLE `game_event_prerequisite` (
-  `eventEntry` mediumint(8) unsigned NOT NULL,
+  `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
   `prerequisite_event` mediumint(8) unsigned NOT NULL,
   PRIMARY KEY (`eventEntry`,`prerequisite_event`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_prerequisite` WRITE;
 /*!40000 ALTER TABLE `game_event_prerequisite` DISABLE KEYS */;
+INSERT INTO `game_event_prerequisite` VALUES (34,35),(35,35),(36,37),(37,35),(38,39),(39,37),(40,41),(41,37),(42,43),(43,41),(44,45),(45,41),(46,47),(47,45),(47,47);
 /*!40000 ALTER TABLE `game_event_prerequisite` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

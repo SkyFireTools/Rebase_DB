@@ -11,13 +11,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_pool`;
 CREATE TABLE `game_event_pool` (
+  `eventEntry` tinyint(3) NOT NULL COMMENT 'Entry of the game event. Put negative entry to remove during event.',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Id of the pool',
-  `eventEntry` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Put negatives values to remove during event',
   PRIMARY KEY (`pool_entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_pool` WRITE;
 /*!40000 ALTER TABLE `game_event_pool` DISABLE KEYS */;
+INSERT INTO `game_event_pool` VALUES (9,5699),(9,5700),(9,5701),(9,5702),(9,5703),(9,5704),(9,5705),(9,5706);
 /*!40000 ALTER TABLE `game_event_pool` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

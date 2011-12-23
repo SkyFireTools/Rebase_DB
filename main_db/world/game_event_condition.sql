@@ -11,7 +11,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_condition`;
 CREATE TABLE `game_event_condition` (
-  `eventEntry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
   `condition_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `req_num` float DEFAULT '0',
   `max_world_state_field` smallint(5) unsigned NOT NULL DEFAULT '0',
@@ -22,6 +22,7 @@ CREATE TABLE `game_event_condition` (
 
 LOCK TABLES `game_event_condition` WRITE;
 /*!40000 ALTER TABLE `game_event_condition` DISABLE KEYS */;
+INSERT INTO `game_event_condition` VALUES (33,1,100,0,3244,''),(34,1,1,0,0,''),(35,1,100,0,3233,''),(36,1,1,0,0,''),(37,1,100,0,0,''),(38,1,1,0,0,''),(39,1,100,0,0,''),(40,1,1,0,0,''),(41,1,100,0,0,''),(42,1,1,0,0,''),(43,1,100,0,0,''),(44,1,1,0,0,''),(45,1,1e+006,0,0,''),(46,1,1,0,0,''),(47,1,1,0,0,'');
 /*!40000 ALTER TABLE `game_event_condition` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

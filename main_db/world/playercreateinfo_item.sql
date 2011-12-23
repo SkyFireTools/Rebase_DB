@@ -20,6 +20,7 @@ CREATE TABLE `playercreateinfo_item` (
 
 LOCK TABLES `playercreateinfo_item` WRITE;
 /*!40000 ALTER TABLE `playercreateinfo_item` DISABLE KEYS */;
+INSERT INTO `playercreateinfo_item` VALUES (0,6,40582,-1);
 /*!40000 ALTER TABLE `playercreateinfo_item` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

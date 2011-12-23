@@ -11,15 +11,16 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_model_equip`;
 CREATE TABLE `game_event_model_equip` (
+  `eventEntry` tinyint(3) NOT NULL COMMENT 'Entry of the game event.',
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `equipment_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `eventEntry` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_model_equip` WRITE;
 /*!40000 ALTER TABLE `game_event_model_equip` DISABLE KEYS */;
+INSERT INTO `game_event_model_equip` VALUES (25,12088,0,92),(25,12093,0,92),(25,12095,0,92),(25,79670,0,92),(25,79675,0,92),(25,79676,0,92),(25,79690,0,92),(25,79792,0,92),(25,79807,0,92),(25,79814,0,92);
 /*!40000 ALTER TABLE `game_event_model_equip` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

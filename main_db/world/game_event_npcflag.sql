@@ -11,14 +11,15 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_npcflag`;
 CREATE TABLE `game_event_npcflag` (
+  `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
   `guid` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `eventEntry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `npcflag` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`eventEntry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_npcflag` WRITE;
 /*!40000 ALTER TABLE `game_event_npcflag` DISABLE KEYS */;
+INSERT INTO `game_event_npcflag` VALUES (42,93964,4224),(17,1803,179),(17,38112,129),(17,26771,179),(17,46320,177),(17,208240,1048705);
 /*!40000 ALTER TABLE `game_event_npcflag` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

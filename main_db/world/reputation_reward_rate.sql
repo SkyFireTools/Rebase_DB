@@ -20,7 +20,7 @@ CREATE TABLE `reputation_reward_rate` (
 
 LOCK TABLES `reputation_reward_rate` WRITE;
 /*!40000 ALTER TABLE `reputation_reward_rate` DISABLE KEYS */;
-INSERT INTO `reputation_reward_rate` VALUES (529,2,1,2),(609,2,1,2),(576,4,1,4),(1073,2,2,2),(1119,1.3,1.3,1.3),(1106,1.3,1.3,1.3),(1090,1.3,1.3,1.3),(1098,1.3,1.3,1.3),(1091,1.3,1.3,1.3),(970,3,1,3),(978,2,1,2),(941,2,1,2),(1105,2,2,2),(1104,2,2,2);
+INSERT INTO `reputation_reward_rate` VALUES (529,1,1,2),(609,1,1,2),(576,4,1,1),(1073,1,2,2),(1119,1,1.3,1.3),(1106,1,1.3,1.3),(1090,1,1.3,1.3),(1098,1,1.3,1.3),(1091,1,1.3,1.3),(970,1,1,3),(978,1,1,2),(941,2,1,1),(1105,1,2,2),(1104,1,2,2);
 /*!40000 ALTER TABLE `reputation_reward_rate` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

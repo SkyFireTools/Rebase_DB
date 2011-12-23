@@ -19,10 +19,11 @@ CREATE TABLE `achievement_dbc` (
   `count` int(10) unsigned NOT NULL DEFAULT '0',
   `refAchievement` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `achievement_dbc` WRITE;
 /*!40000 ALTER TABLE `achievement_dbc` DISABLE KEYS */;
+INSERT INTO `achievement_dbc` VALUES (3696,-1,-1,0,2,1,0),(4788,-1,-1,0,2,1,0),(4789,-1,-1,0,2,1,0);
 /*!40000 ALTER TABLE `achievement_dbc` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
