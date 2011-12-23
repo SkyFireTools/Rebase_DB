@@ -1,12 +1,10 @@
-= SkyFireDB REBASE -- General information =
+= TrinityDB -- General information =
 
-  SkyFireEMU Support for 4.0.6a REBASE
+  TrinityCore Support for 3.3.5a
   
-  This is for the rebase only. Not ready for use yet.
+  Copyright (C) TrinityCore (http://www.trinitycore.org)
 
-  Copyright (C) ProjectSkyfire (http://www.projectskyfire.org)
-
-  SkyFireDB is free software; you can redistribute it and/or modify
+  TrinityDB is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation; either version 2 of the License, or
   (at your option) any later version.
